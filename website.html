@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Triyog Store</title>
+<style>
+    *{padding:0; margin:0; box-sizing: border-box; font-family: sans-serif; }
+
+    body{
+        background-color: antiquewhite;
+    }
+header{
+width: 100%;
+height: 100vh;
+}
+html{
+scroll-behavior: smooth;
+}
+nav{
+    background-color: bisque;
+width: 100%;
+height: 70px;
+border-bottom: 1px solid grey;
+box-shadow: 2px 0px 5px grey;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.logo{
+font-size: 40px;
+font-weight: bold;
+}
+.menu a{
+text-decoration: none;
+font-size: 20px;
+color: rgb(82, 35, 35);
+padding: 10px 20px;
+margin: 5px;
+font-weight: bold;
+}
+.menu a:last-child{
+background: rgb(31, 179, 129);
+color: white;
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+transform-style: preserve-3d;
+transform-origin: center;
+perspective: 2000px;
+}
+.left{
+flex-basis:50%;
+animation: animate 3s linear infinite;
+}
+@keyframes animate{
+0%{
+transform: scale(1.1);
+}
+50%{
+transform: scale(1);
+}
+100%{
+transform: scale(1.1);
+}
+}
+.right{
+flex-basis:50%;
+max-width: 400px;
+margin-left: 100px;
+}
+.right h1{
+font-size: 50px;
+}
+.right p{
+font-size: 25px;
+margin: 20px 0px;
+}
+button{
+background: rgb(240, 120, 8);
+color: white;
+font-weight: bold;
+border: none;
+outline: none;
+padding: 10px 20px;
+bottom-margin: 20px;
+}
+#featured{
+padding: 50px 0px;
+font-size: 40px;
+text-align: center;
+}
+.wrapper{
+display: grid;
+grid-template-columns: repeat(4,20%);
+grid-auto-rows: minmax(200px,auto);
+grid-gap: 1em;
+justify-content: center;
+}
+.wrapper>div{
+border: 1px solid grey;
+position: relative;
+}
+.wrapper> div img{
+width: 100%;
+overflow: hidden;
+}
+.box1{
+grid-row: 1/3;
+grid-column: 1/3;
+}
+.price{
+position: absolute;
+bottom: 0;
+left: 0;
+background: black;
+color: white;
+font-size: 20px;
+}
+.wrapper> div img:hover{
+transform: scale(1.1);
+transition: 0.4s linear;
+}
+#electronics{
+padding: 80px 0px;
+}
+.electronics-row{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.electronics-box{
+flex-basis: 15%;
+box-shadow: 2px 3px 5px grey;
+padding: 10px;
+text-align: center;
+}
+.electronics-box img{
+width: 100%;
+}
+.electronics-box h2{
+margin: 20px 0px;
+}
+.electronics-box h3{
+background: black;
+color: white;
+padding: 10px;
+}
+.electronics-box:hover{
+transform: translateY(-20px);
+transition: 0.4s ease;
+}
+#footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background: rgb(26, 133, 233);
+color: rgb(240, 217, 11);
+padding: 10px;
+}
+.menu a:hover{
+    color: brown;
+}
+.logo:hover{
+    color: rgb(78, 78, 184);
+}
+button:hover{
+    color: blueviolet;
+}
+</style>
+</head>
+<body>
+<header id="home">
+<nav>
+<div class="logo">Triyog Store</div>
+<div class="menu">
+<a href="#home">Home</a>
+<a href="#featured">Featured</a>
+<a href="#health & beauty">Health & Beauty</a>
+<a href="#home appliances">Home Appliances</a>
+<a href="#electronics">Electronics</a>
+<a href="#books">Books</a>
+<a href="#">Shop</a>
+</div>
+</nav>
+<div class="container">
+<div class="left">
+<img src="images/9.png">
+</div>
+<div class="right">
+<h1>Best Festivals Offers</h1>
+<p>We are providing best quality materials. We have best quality 
+refrigerators, headphones.We also have clothes, shoes for men and womens.
+</p>
+<p>30% discount!!!
+</p>
+<button>Shop</button>
+<img src="images/icon.png">
+</div>
+</div>
+</header>
+<section id="featured">
+<h1>Featured</h1>
+<div class="wrapper">
+<div clas="box1">
+<img src="images/6.1.jpg">
+<div class="price">Price:Rs40,000</div>
+</div>
+<div >
+<img src="images/5.jpg">
+<div class="price">Price:Rs33,000</div>
+</div>
+<div >
+<img src="images/11.png">
+<div class="price">Price:Rs36,000</div>
+</div>
+<div >
+<img src="images/9.png">
+<div class="price">Price:Rs38,000</div>
+</div>
+<div >
+<img src="images/8.png">
+<div class="price">Price:Rs34,000</div>
+</div>
+<div >
+<img src="images/11.png">
+<div class="price">Price:Rs39,000</div>
+</div>
+<div >
+<img src="images/6.1.jpg">
+<div class="price">Price:Rs44,000</div>
+</div>
+<div >
+<img src="images/10.png">
+<div class="price">Price:Rs35,000</div>
+</div>
+</div>
+</section>
+<section id="electronics">
+<div class="electronics-row">
+<div class="electronics-box">
+<img src="images/S4.jpg">
+<h2>Beard Trimmer<br>Rs1200</h2>
+<h3>Add to cart</h3>
+</div>
+<div class="electronics-box">
+<img src="images/S3.jpg">
+<h2>Beard Trimmer<br>Rs2000</h2>
+<h3>Add to cart</h3>
+</div>
+<div class="electronics-box">
+<img src="images/S5.jpg">
+<h2>Gaming Mouse<br>Rs2500</h2>
+<h3>Add to cart</h3>
+</div>
+<div class="electronics-box">
+<img src="images/S7.jpg">
+<h2>Gaming Mouse<br>Rs3200</h2>
+<h3>Add to cart</h3>
+</div>
+<div class="electronics-box">
+<img src="images/S8.jpg">
+<h2>Gaming Mouse<br>Rs3000</h2>
+<h3>Add to cart</h3>
+</div>
+</div>
+</section>
+</section>
+<section id="electronics">
+<div class="electronics-row">
+<div class="electronics-box">
+<img src="images/T1.jpeg">
+<h2>Electric Kettle<br>Rs3000</h2>
+<h3>Add to cart</h3>
+</div>
+<div class="electronics-box">
+<img src="images/T2.jpeg">
+<h2>Electric Kettle<br>Rs2500</h2>
+<h3>Add to cart</h3>
+</div>
+<div class="electronics-box">
+<img src="images/T3.jpeg">
+<h2>Fry Pan<br>Rs3200</h2>
+<h3>Add to cart</h3>
+</div>
+<div class="electronics-box">
+<img src="images/T4.jpeg">
+<h2>Fry Pan<br>Rs3100</h2>
+<h3>Add to cart</h3>
+</div>
+</div>
+</section>
+<section id="footer">
+<h2>Developed by Smriti Thapa</h2>
+<img src="images/icon.png">
+</section>
+</body>
+</html>
